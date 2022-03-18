@@ -64,8 +64,20 @@
   font-weight: bold;
 }
 
+.Add-btn:hover {
+  background-color: #e3e4e9;
+}
+
 .error-label {
   color: red;
+}
+
+.success-label {
+  color: rgb(22, 182, 35);
+  margin: 7px 27px;
+}
+.success-label p {
+  margin: 7px 27px;
 }
 .error-label p {
   margin: 7px 27px;

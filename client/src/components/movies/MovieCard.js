@@ -59,8 +59,8 @@ const MovieCard = ({ movie, forceUp }) => {
                 className="card-title-link"
               >
                 <p className="card-name">
-                  <label>Name: </label>
-                  {movie.name}
+                  <label className="card-name-labal">Name: </label>
+                  <p className="card-name-p">{movie.name}</p>
                 </p>
               </Link>
             </h5>

@@ -9,9 +9,11 @@ const AddNewMovie = () => {
   const [isWatched, setIsWatched] = useState(false);
   const [rate, setRate] = useState("");
   const [errors, setErrors] = useState([]);
+  const [suceesMessage, setSuceesMessage] = useState([]);
 
   const validateMovieObj = (movieObj) => {
     setErrors([]);
+    setSuceesMessage("");
     let isValid = true;
     if (!movieObj.name) {
       isValid = false;
@@ -45,6 +47,10 @@ const AddNewMovie = () => {
     if (validateMovieObj(movieObj)) {
       createMovie(movieObj);
 
+      setSuceesMessage(
+        `The "${movieName}" movie successfully added to your collection!`
+      );
+
       setMovieName("");
       setCategory("");
       setIsWatched(false);
@@ -65,6 +71,7 @@ const AddNewMovie = () => {
               onChange={(e) => {
                 setMovieName(e.target.value);
                 setErrors([]);
+                setSuceesMessage("");
               }}
             />
 
@@ -77,6 +84,7 @@ const AddNewMovie = () => {
               onChange={(e) => {
                 setCategory(e.target.value);
                 setErrors([]);
+                setSuceesMessage("");
               }}
             >
               <option value=""> {""}Selet a category</option>
@@ -97,6 +105,7 @@ const AddNewMovie = () => {
               onChange={(e) => {
                 setIsWatched(!isWatched);
                 setErrors([]);
+                setSuceesMessage("");
               }}
             />
             <label className="movie-isWatched-label">
@@ -110,6 +119,7 @@ const AddNewMovie = () => {
                 onChange={(e) => {
                   setRate(e.target.value);
                   setErrors([]);
+                  setSuceesMessage("");
                 }}
               />
             )}
@@ -117,6 +127,11 @@ const AddNewMovie = () => {
             <button type="submit" className="Add-btn">
               Add
             </button>
+            {suceesMessage && (
+              <label className="success-label">
+                <p>{suceesMessage}</p>
+              </label>
+            )}
             {errors && (
               <label className="error-label">
                 {errors.map((error) => (

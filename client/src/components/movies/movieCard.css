@@ -54,7 +54,10 @@
   color: white;
   font-size: 22px;
 }
-
+.card-name-labal,
+.card-name-p {
+  display: inline;
+}
 .movie-rate-card {
   color: #5a5b5f;
   border-radius: 4px;
@@ -66,6 +69,7 @@
   display: inline-block;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 16px;
 }
 .btn-mark {
   width: 60%;
@@ -79,19 +83,10 @@
   cursor: pointer;
   font-size: 16px;
 }
-/* .btn-delete {
-  width: 60%;
-  height: 10px;
-  background-color: #aa162fee;
-  border: 1px solid white;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-} */
+.btn-mark:hover {
+  background-color: #2d4e30b8;
+}
+
 .btn-delete {
   /* display: none;
   position: absolute; */
@@ -114,13 +109,9 @@
   fill: white;
 }
 .btn-delete:hover svg path {
-  fill: rgb(179, 152, 152);
+  fill: #e54e4e;
 }
-.btn-delete:active {
-  background: #e54e4e;
-  top: -10px;
-  right: -11px;
-}
+
 .rate-wrap {
   height: 85px;
 }

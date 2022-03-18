@@ -66,17 +66,20 @@ const MovieDetails = () => {
               <div className="card-content">
                 <h5 className="card-title">
                   <p className="card-name">
-                    <label>Name: </label>
-                    {movie.name}
+                    <label className="card-name-labale">Name: </label>
+                    <p className="card-name-movie">{movie.name}</p>
                   </p>
                 </h5>
 
                 <p className="text-rate">
-                  <label>Category: </label>
+                  <label className="text-category-labale">Category: </label>
                   {movie.category}
                 </p>
                 {movie.isWatched ? (
-                  <p className="text-rate">{movie.rate}</p>
+                  <div>
+                    <label className="text-rate-rate">rate: </label>
+                    {movie.rate}
+                  </div>
                 ) : (
                   <div>
                     <input
@@ -93,7 +96,7 @@ const MovieDetails = () => {
                   </div>
                 )}
 
-                <button onClick={handleDelete} className="btn-delete">
+                <button onClick={handleDelete} className="btn-delete-details">
                   Delete
                 </button>
               </div>
