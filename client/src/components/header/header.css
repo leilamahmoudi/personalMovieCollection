@@ -1,0 +1,16 @@
+.Header {
+  background: #1e2931;
+  width: 100%;
+  height: 148px;
+  line-height: 148px;
+  position: relative;
+  color: aliceblue;
+  /* border: 0.5px solid gray; */
+}
+.header--title {
+  text-align: center;
+  font-size: 42px;
+  line-height: 148px;
+  margin: 0 auto;
+  margin-left: 194px;
+}

@@ -1,0 +1,14 @@
+.movie-group {
+  display: flex;
+  clear: both;
+
+  flex-flow: wrap;
+  align-content: flex-start;
+  margin: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .movie-group {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,11 @@
+.page-flex {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 120px);
+}
+.page-container {
+  width: calc(100vw - 250px);
+  background: #1e2931ee;
+  /* border-left: 0.7px solid rgba(128, 128, 128, 0.647);
+  border-top: 0.7px solid rgba(128, 128, 128, 0.647); */
+}

@@ -1,0 +1,131 @@
+.MovieCard {
+  width: calc(100% / 4);
+}
+.card {
+  padding: 10px 0 15px 0;
+}
+.img-wrap-fig {
+  position: relative;
+  width: 200px;
+  height: 194px;
+  background-color: white;
+  margin: 0 auto;
+}
+.card-img-top {
+  width: 100%;
+  display: block;
+  /* box-shadow: 0px 0px 5px rgb(153, 152, 152); */
+}
+.card-img-top:hover {
+  width: 107%;
+}
+.card-body {
+  text-align: center;
+}
+.card-content {
+  color: rgb(192, 189, 189);
+  text-align: center;
+  line-height: 15px;
+  font-size: 16px;
+  margin-top: 2px;
+}
+.text-rate {
+  margin-top: 10px;
+  color: rgb(195, 194, 194);
+  font-size: 20px;
+}
+.card-title {
+  font-style: oblique;
+  font-weight: 700;
+  color: #700859;
+  margin: 0 auto;
+}
+.card-title-link {
+  text-decoration: none;
+  color: #700859;
+}
+.card-title-link:hover {
+  color: black;
+}
+.card-name {
+  padding: 109px 10px 10px 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 22px;
+}
+
+.movie-rate-card {
+  color: #5a5b5f;
+  border-radius: 4px;
+  border: 1px solid #181d31;
+  width: 60%;
+  height: 10px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn-mark {
+  width: 60%;
+  background-color: #1e2931ee;
+  border: 1px solid white;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* .btn-delete {
+  width: 60%;
+  height: 10px;
+  background-color: #aa162fee;
+  border: 1px solid white;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+.btn-delete {
+  /* display: none;
+  position: absolute; */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  font: 700 21px/20px sans-serif;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+.btn-delete svg {
+  width: 20px;
+}
+.btn-delete svg path {
+  fill: white;
+}
+.btn-delete:hover svg path {
+  fill: rgb(179, 152, 152);
+}
+.btn-delete:active {
+  background: #e54e4e;
+  top: -10px;
+  right: -11px;
+}
+.rate-wrap {
+  height: 85px;
+}
+@media only screen and (max-width: 768px) {
+  .MovieCard {
+    width: 80%;
+  }
+}
